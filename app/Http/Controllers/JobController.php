@@ -8,10 +8,21 @@ use App\Models\Job;
 class JobController extends Controller
 {
     public function index()
-    {
-        $jobs = Job::orderBy('id', 'desc')->get();
+    {  
+        $search = request('search');
 
-        return view('pages.home', ['jobs' => $jobs]);
+        if($search) {
+
+            $jobs = Job::where([
+                ['title', 'like', '%'.$search.'%']
+            ])->get();
+
+        } else {
+
+            $jobs = Job::orderBy('id', 'desc')->get();
+        }
+
+        return view('pages.home', ['jobs' => $jobs, 'search' => $search]);
     }
 
     public function create()
