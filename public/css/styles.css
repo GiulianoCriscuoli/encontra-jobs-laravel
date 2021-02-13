@@ -1,0 +1,333 @@
+* {
+
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+/* menu de navegação */
+
+.navbar {
+
+    padding: 1rem;
+    border-bottom: 1px solid rgb(100, 96, 96);
+   
+}
+
+.navbar-brand {
+
+    font-family: helvetica;
+
+}
+
+.navbar .nav-item a {
+
+    color: #ffffff;
+}
+
+.nav-item {
+
+    margin: 10px 0;
+
+}
+.nav-item #check-work {
+
+    color: #ffffff;
+    font-size: 20px;
+    width: 150px;
+    display:block;
+    margin: 0 auto;
+
+}
+
+.nav-item #check-work:hover {
+
+    color: #e0a800;
+    border-bottom: 3px solid #e0a800; 
+
+}
+
+.create-work {
+
+    color: #000 !important;
+    width: 50%;
+    margin: 10px auto;
+ 
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+
+    padding: 10px 25px;
+    font-weight: bold;
+
+}
+
+/* banner */
+
+#top-container {
+
+    padding: 110px;
+    border-bottom: 4px solid #dde0f4;
+    margin-bottom: 50px;
+    background-image: url("../img/city.jpg");
+    background-position:bottom;
+    background-size: cover;
+    color: #ffffff;
+
+}
+
+ #top-container #main-title {
+
+    padding: 30px 0;
+    font-size: 3.1rem;
+
+}
+
+#top-container #main-subtitle {
+
+    font-size: 1.25rem;
+    padding-bottom: 80px;
+
+}
+
+/* área de procura de vagas */
+
+#top-container #search-form {
+
+    padding: 30px 100px;
+    
+}
+
+#search-form .col-md-10, 
+#search-form .col-md-2 {
+
+    padding: 0;
+
+}
+
+#search-form input,
+#search-form button {
+
+    width: 100%;
+    height: 50px;
+    border-radius: 0;
+    font-size:19px;
+
+}
+
+#search-form button {
+
+    color: #000;
+    border: 2px solid transparent;
+
+}
+
+#search-form button:hover,
+.list-group-item a:hover,
+#form-box button:hover {
+
+    background-color: #FFF;
+    color: #e0a800;
+    border-color:#e0a800;
+    transition: ease 0.2s all;
+
+}
+
+#jobs-container {
+
+    padding: 0 100px;
+    padding-bottom: 40px;
+
+}
+
+#jobs-container #job-list-title {
+
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin-bottom: 50px;
+
+}
+
+#job-list .list-group-item {
+
+    margin-bottom: 8px;
+    border: 1px solid #BBB;
+    padding: 20px 70px;
+    color: #000;
+    height: 140px;
+
+}
+
+#job-list .list-group-item.new-job {
+
+    border: none;
+    background-color: #c3bb90;
+
+}
+
+#job-list-title {
+
+    margin-bottom: 35px;
+
+}
+
+.list-group-item img {
+
+    width:90px;
+    border: 1px solid #BBB;
+    border-radius: 50%;
+    position:absolute;
+    top: calc(50% -80px);
+    left: -40px;
+    background-color: #FFF;
+
+}
+
+.list-group-item a {
+
+    position: absolute;
+    top: 35px;
+    right: 30px;
+    height: 50px;
+    background-color: #e0a800;
+    line-height: 35px;
+    border: 1px solid transparent;
+    color: #000;
+    font-size: 18px;
+
+}
+
+.new-job-label {
+
+    position: absolute;
+    top: 40px;
+    background-color: rgb(204, 28, 28);
+    right: 320px;
+    color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: none;
+    border-radius: 3px;
+
+}
+
+.list-group-item.new-job span {
+
+    display:block;
+
+}
+
+/* Responsividade */
+
+@media (max-width: 481px) {
+
+    /* menu */
+
+    #navbarNav {
+
+        text-align: center;
+
+    }
+
+    #top-container {
+
+        padding: 50px;
+        padding-top: 100px;
+
+    }
+
+    #main-title {
+
+        font-size: 2.2rem;
+
+    }
+
+    #main-subtitle {
+
+        font-size: 1.5rem;
+    }
+
+    #search-form {
+
+        padding: 0;
+        
+    }
+
+    #jobs-container {
+
+        padding: 20px;
+
+    }
+
+    #jobs-container .list-group-item {
+
+        padding: 15px 85px;
+
+    }
+
+    .list-group-item h2 {
+
+        font-size: 1.2rem;
+        width: 80%;
+
+    }
+
+    .list-group-item img {
+
+        width: 50px;
+        left: -20px;
+        top: calc(50% - 25px);
+
+    }
+
+    .list-group-item.new-job span {
+
+        display: none;
+
+    }
+
+    /* job view */
+
+    #create-title {
+
+        font-size: 1.7rem;
+    }
+    
+    .back-link {
+
+        margin-left: 0;
+        margin-bottom: 5px;
+
+    }
+    
+
+    #job-view-container {
+
+        width: 90%;
+
+    }
+
+
+    #form-box {
+
+        padding: 20px;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+
+
+    }
+
+    #form-box h2 {
+
+        font-size: 1.3rem;
+        text-align: center;
+
+    }
+
+    #form-box button {
+
+        width: 100%;
+    }
+}
