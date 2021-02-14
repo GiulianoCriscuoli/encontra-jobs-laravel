@@ -5,6 +5,17 @@
 
 }
 
+a {
+
+    color: #7B68EE;
+     
+}
+
+a:hover {
+    color: #7B68EE;
+    text-decoration: none;
+}
+
 /* menu de navegação */
 
 .navbar {
@@ -17,7 +28,8 @@
 .navbar-brand {
 
     font-family: helvetica;
-
+    font-weight: bold;
+    
 }
 
 .navbar .nav-item a {
@@ -42,8 +54,8 @@
 
 .nav-item #check-work:hover {
 
-    color: #e0a800;
-    border-bottom: 3px solid #e0a800; 
+    color: #7B68EE;
+    border-bottom: 3px solid #7B68EE; 
 
 }
 
@@ -69,7 +81,7 @@
     padding: 110px;
     border-bottom: 4px solid #dde0f4;
     margin-bottom: 50px;
-    background-image: url("../img/city.jpg");
+    background-image: url("../img/job.jpg");
     background-position:bottom;
     background-size: cover;
     color: #ffffff;
@@ -80,6 +92,7 @@
 
     padding: 30px 0;
     font-size: 3.1rem;
+    font-weight: bold;
 
 }
 
@@ -87,6 +100,7 @@
 
     font-size: 1.25rem;
     padding-bottom: 80px;
+    font-weight: bold;
 
 }
 
@@ -95,6 +109,7 @@
 #top-container #search-form {
 
     padding: 30px 100px;
+    font-weight: bold;
     
 }
 
@@ -112,14 +127,19 @@
     height: 50px;
     border-radius: 0;
     font-size:19px;
+    font-weight: bold;
 
 }
 
 #search-form button {
 
-    color: #000;
+    color: #fff;
     border: 2px solid transparent;
 
+}
+
+.btn-purple {
+    background-color: #7B68EE;
 }
 
 #search-form button:hover,
@@ -127,8 +147,8 @@
 #form-box button:hover {
 
     background-color: #FFF;
-    color: #e0a800;
-    border-color:#e0a800;
+    color: #7B68EE;
+    border-color:#7B68EE;
     transition: ease 0.2s all;
 
 }
@@ -161,7 +181,7 @@
 #job-list .list-group-item.new-job {
 
     border: none;
-    background-color: #c3bb90;
+    background-color: #a8b3a0;
 
 }
 
@@ -189,12 +209,12 @@
     top: 35px;
     right: 30px;
     height: 50px;
-    background-color: #e0a800;
+    background-color: #7B68EE;
     line-height: 35px;
     border: 1px solid transparent;
-    color: #000;
+    color: #FFF;
     font-size: 18px;
-
+    font-weight: bold
 }
 
 .new-job-label {
@@ -202,7 +222,7 @@
     position: absolute;
     top: 40px;
     background-color: rgb(204, 28, 28);
-    right: 320px;
+    right: 280px;
     color: rgb(255, 255, 255);
     padding: 5px 10px;
     font-weight: 600;

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-<div id="top-container"class="container-fluid">
+<div id="top-container"class="container-fluid overlay">
     <h1 id="main-title" class="text-center">Aqui você encontra a vaga dos seus sonhos</h1>
     <p id="main-subtitle" class="text-center">Somos o site com mais vagas de programadores do mercado, direcionado para o trabalho remoto.</p>
     <form id="search-form" class="form-inline" method="GET">
@@ -13,7 +13,7 @@
         </div> 
 
         <div class="col-md-2">
-            <button type="submit" class="btn btn-warning">Procurar</button>
+            <button type="submit" class="btn btn-purple">Procurar</button>
         </div>
     </form>
 </div>
@@ -30,7 +30,6 @@
                     <ul id="job-list" class="list-group">
                         @foreach($jobs as $job)
                             <li class="list-group-item new-job">
-                                <img src="img/home.svg"  alt="{{$job->nameCompany}}"/>
                                 <p>{{ $job->name }}</p>
                                 <h2>{{ $job->title }}</h2>
                                 <p>$RS {{ $job->salary }}</p>

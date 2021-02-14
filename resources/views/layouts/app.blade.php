@@ -12,7 +12,7 @@
 </head>
 <header>
     <nav class="navbar fixed-top nav-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="{{ route('home') }}">Encontra Jobs</a>
+        <a class="navbar-brand logo" href="{{ route('home') }}">Encontra Jobs</a>
         <button class="navbar-toggler" 
         type="button"
         data-toggle="collapse" 
@@ -29,7 +29,7 @@
                 </li> --}}
 
                 <li class="nav-item">
-                    <a id="create-work" class=" create work nav-link btn btn-warning" href="{{ route('jobs.create') }}">Adicionar uma vaga</a>
+                    <a id="create-work" class=" create work nav-link btn btn-purple" href="{{ route('jobs.create') }}">Adicionar uma vaga</a>
                 </li>
             </ul>
         </div>

@@ -8,13 +8,13 @@
 
 .main-color {
 
-    color: #e0a800;
+    color: #7B68EE;
 
 }
 
 .back-link {
 
-    border: 1px solid #e0a800;
+    border: 1px solid #7B68EE;
     padding: 5px 10px;
     transition: .5s;
     cursor:pointer;
@@ -23,7 +23,7 @@
 
 .back-link:hover {
 
-    background-color: #e0a800;
+    background-color: #7B68EE;
     text-decoration: none;
     color: rgb(255, 255, 255);
 
@@ -31,7 +31,7 @@
 
 #job-content {
 
-    box-shadow: 1px 0 10px rgba(235, 231, 8, 0.85);
+    box-shadow: 1px 0 10px rgba(78, 24, 186, 0.85);
     padding: 10px 0;
     margin-top: 20px;
     background-color: rgb(251, 251, 251);
@@ -76,6 +76,6 @@
 
 .bold.main-color {
 
-    border-bottom: 2px solid #e0a800;
+    border-bottom: 2px solid #7B68EE;
 
 }
